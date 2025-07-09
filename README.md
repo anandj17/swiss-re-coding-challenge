@@ -43,9 +43,15 @@ src/
 │           
 ├── test/
 │   └── java/com/bigcompany/
-│       ├── data/MockEmployeeDataSource.java
-│       ├── DepthValidationRuleTest.java
-│       └── SalaryValidationRuleTest.java
+│       ├── data/
+│       │   ├── MockEmployeeDataSource.java
+│       │   ├── MockEmployeeDataSourceDepthViolation.java
+│       │   ├── MockEmployeeDataSourceSalaryViolationLow.java
+│       │   ├── MockEmployeeDataSourceSalaryViolationHigh.java
+│       │   └── MockEmployeeDataSourceNoViolation.java
+│       └── rules/
+│           ├── DepthValidationRuleTest.java
+│           └── SalaryValidationRule.java
 │
 ├── employees.csv (sample input)
 └── pom.xml
